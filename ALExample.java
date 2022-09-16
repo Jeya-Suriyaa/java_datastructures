@@ -1,10 +1,18 @@
+import java.util.*;
 public class ALExample {
 
     public static void main(String args[]){
              
-        System.out.println("hello");
+        
+        ArrayList<String> Cryptos = new ArrayList<String>();
+        Cryptos.add("bitcoin");
+        Cryptos.add("Ethereum");
+        Cryptos.add("ShibaInu");
 
-
+        Iterator itr = Cryptos.iterator();
+        while(itr.hasNext()){
+            System.out.println(itr.next());
+        }
 
 
     }
